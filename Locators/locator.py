@@ -29,7 +29,7 @@ warning_message = (By.LINK_TEXT, 'The Your Message field is required.')
 journey_filter_input = (By.CLASS_NAME, 'icon-search')
 
 # 5- tags list when we select template in created journey campaign and didn’t click Use this Template button
-tags_list = (By.XPATH, '//*[@id="page"]/section/div/div/div/div/div[2]/div/div[2]/div[3]/div[2]/div/div[2]/div')
+tags_list = (By.CLASS_NAME, 'class="btn btnBlue btnSelectTemplate animationHalf"')
 
 # 6- on Journey do list how to click exactly needed campaign’s
 # Statistics button if there is more than 1 campaigns in the list
@@ -37,13 +37,11 @@ statistics = (By.XPATH, '//*[@id="personalizationList"]/tbody/tr[1]/td[7]')
 
 # 7- on Message box design page remove variation cross icon
 remove_variation = (By.CLASS_NAME, 'variationDelete')
-remove_variation_xpath = (By.XPATH, '//*[@id="page"]/section/div/div/div/div/div[2]/div[3]/'
-                                    'div/div[1]/div/div/div[1]/div/div[1]/div[5]/div')
 
 # 8- Remove/ Change element buttons on Journey canvas page
-change_element = (By.CSS_SELECTOR, '#wait-for-some-time-2 > svg > image.disable')
+change_element = (By.XPATH, '//*[@id="wait-for-some-time-2"]/svg/image[1]')
 # //*[@id="wait-for-some-time-2"]/svg/image[1]
-remove_element = (By.CSS_SELECTOR, '#wait-for-some-time-2 > svg > image:nth-child(3)')
+remove_element = (By.XPATH, '//*[@id="wait-for-some-time-2"]/svg/image[2]')
 # //*[@id="wait-for-some-time-2"]/svg/image[2]
 
 # 9- Alert toaster on any page of panel
