@@ -34,7 +34,7 @@ TAGS_LIST = (By.CLASS_NAME, 'class="btn btnBlue btnSelectTemplate animationHalf"
 # 6- on Journey do list how to click exactly needed campaign’s
 # Statistics button if there is more than 1 campaigns in the list
 # Hangi istatistiğe tıklamak istersek nth-child(i) buradaki alanı değiştirebiliriz
-STATISTICS = (By.CSS_SELECTOR, " tr:nth-child(3) > td.vuetable-slot.statistics > div > div")
+STATISTICS = (By.CSS_SELECTOR, "tr:nth-child(3) > .statistics")
 
 # 7- on Message box design page remove variation cross icon
 REMOVE_VARIATION = (By.CLASS_NAME, 'variationDelete')
@@ -51,4 +51,4 @@ ALERT_PANEL_TEXT = (By.LINK_TEXT, 'Please fill all necessary fields.')
 ALERT = (By.CSS_SELECTOR, 'div.messageAlertBox')
 
 #10- on Social Proof ‘Create New Personalization’
-CREATE_NEW_PERSONALIZATION = (By.CSS_SELECTOR, 'div.personalization > div:nth-child(1) > div')
+CREATE_NEW_PERSONALIZATION = (By.CLASS_NAME, 'buttonsWrapper')
